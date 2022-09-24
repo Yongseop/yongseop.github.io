@@ -51,18 +51,20 @@
                 <!--<li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#about">About</a>
                 </li>-->
+                
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-              </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#portfolio">Project</a>
+                    <a class="nav-link js-scroll-trigger" href="#portfolio">Projects</a>
                 </li> 
                 <!--<li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
                 </li>-->
+
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
+                </li>
                 <li class="nav-item">
                     <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
                 </li>
@@ -136,70 +138,161 @@
           </div>
       </section>
 
+    
     <!--====================================================
-                        EXPERIENCE
+                        PROJECTS
     ======================================================-->      
-      <section class="resume-section p-3 p-lg-5 " id="experience">
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio"> 
           <div class="row my-auto">
               <div class="col-12">
-                <h2 class="  text-center">Experience</h2>
+                <h2 class="  text-center">Projects</h2>
                 <div class="mb-5 heading-border"></div>
               </div>
-              <div class="resume-item col-md-12 col-sm-12 " > 
-                <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-                  <div class=" resume-content mr-auto">
-                      <h4 class="mb-3"><img src="img/3secondz.svg" style="height:40px;"></h4>
-                      <!--<h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i>3SECONDZ Inc.</h4>-->
-                      <h5>Director, Pilot Division Lead</h5>
-                      <p><a href="https://3secondz.com">3SECONDZ Inc.</a>, a startup established in 2016, aims to extract intelligence from driving data. They commercialized the world's first AI-based motorsports coach.
-                        Starting with the self-developed driving data logger device "XYRO", they completed <a href="https://3secondz.com/product/teamsolution">a total solution</a> covering data collection, analysis, management and utilization.
-                        They are seeking ways to enter the ADAS, autonomous driving, connected car and mobility markets with their own driving-data ecosystem.
-                        <br /><br />
-                        As a lead of Pilot division, I'm in charge of government-funded projects and prior research for future growth carried out by 3SECONDZ R&D Center.</p>
-                  </div>
-                  <div class="resume-date text-md-right">
-                      <span class="text-primary">September 2016 - Present</span>
-                  </div>
-                </div>  
+              <div class="col-md-12">
+                <div class="port-head-cont">
+                  <button class="btn btn-general btn-green filter-b" data-filter="all">All</button>
+                  <button class="btn btn-general btn-green filter-b" data-filter="autonomousvehicle">Autonomous Vehicle</button>                  
+                  <button class="btn btn-general btn-green filter-b" data-filter="robotics">Robotics</button>                   
+                  <button class="btn btn-general btn-green filter-b" data-filter="sensorfusion">Sensor Fusion</button>
+                </div>
               </div>
-              
-              <!-- <div class="resume-item col-md-6 col-sm-12">
-                <div class="card mx-0 p-4 mb-5" style="border-color: #ffc107; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-                  <div class="resume-content mr-auto">
-                      <h4 class="mb-3"><i class="fa fa-laptop mr-3 text-warning"></i>  Web Developer</h4>
-                      <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                  </div>
-                  <div class="resume-date text-md-right">
-                      <span class="text-primary">December 2018 - March 2019</span>
-                  </div>
-                </div>  
+          </div>
+          <div class="row my-auto">
+              <div class="col-sm-4 portfolio-item filter robotics">
+                  <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-1.jpg" alt="">
+                  </a>
               </div>
-              <div class="resume-item col-md-6 col-sm-12">
-                <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-                  <div class="resume-content mr-auto">
-                      <h4 class="mb-3"><i class="fa fa-camera mr-3 text-success"></i> Junior Web Designer</h4>
-                      <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                  </div>
-                  <div class="resume-date text-md-right">
-                      <span class="text-primary">July 2017 - December 2018</span>
-                  </div>
-                </div>  
+              <div class="col-sm-4 portfolio-item filter robotics">
+                  <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-2.jpg" alt="">
+                  </a>
               </div>
-              <div class="resume-item col-md-6 col-sm-12">
-                <div class="card mx-0 p-4 mb-5" style="border-color: #2196f3; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
-                  <div class="resume-content mr-auto">
-                      <h4 class="mb-3"><i class="fa fa-area-chart mr-3 text-primary"></i> Web Design Intern</h4>
-                      <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
-                  </div>
-                  <div class="resume-date text-md-right">
-                      <span class="text-primary">September 2018 - June 2019</span>
-                  </div>
-                </div>  
-              </div> -->
+              <div class="col-sm-4 portfolio-item filter sensorfusion">
+                  <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-3.jpg" alt="">
+                  </a>
+              </div> 
+              <div class="col-sm-4 portfolio-item filter sensorfusion">
+                  <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-4.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter robotics">
+                  <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-5.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter autonomousvehicle">
+                  <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-6.jpg" alt="">
+                  </a>
+              </div>              
+              <div class="col-sm-4 portfolio-item filter autonomousvehicle">
+                  <a class="portfolio-link" href="#portfolioModal7" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-7.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter autonomousvehicle">
+                  <a class="portfolio-link" href="#portfolioModal8" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-8.jpg" alt="">
+                  </a>
+              </div>
+              <div class="col-sm-4 portfolio-item filter sensorfusion">
+                  <a class="portfolio-link" href="#portfolioModal9" data-toggle="modal">
+                      <div class="caption-port">
+                          <div class="caption-port-content">
+                              <i class="fa fa-search-plus fa-3x"></i>
+                          </div>
+                      </div>
+                      <img class="img-fluid" src="img/portfolio/p-9.jpg" alt="">
+                  </a>
+              </div>              
           </div>
       </section>
 
-      <!--====================================================
+    <!--====================================================
+                        SKILLS
+    ======================================================-->       
+      <!-- <section class=" d-flex flex-column" id="skills">
+         <div class="p-lg-5 p-3 skill-cover">
+          <div class="col-12">
+            <h2 class="text-center" style="color:white;">Skills</h2>
+            <div class="mb-5 heading-border"></div>
+          </div>
+          <div class="row text-center my-auto "> 
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                      <i class="fa fa-html5 fa-5x"></i>
+                      <h2><span class="counter"> 84 </span><span>%</span></h2>
+                      <p>HTML5</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                      <i class="fa fa-css3 fa-5x"></i>
+                      <h2><span class="counter"> 95 </span><span>%</span></h2>
+                      <p>CSS3</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                      <i class="fa fa-code fa-5x"></i>
+                      <h2><span class="counter"> 65 </span><span>%</span></h2>
+                      <p>JQuery</p>
+                  </div>
+              </div>
+              <div class="col-md-3 col-sm-6">
+                  <div class="skill-item">
+                      <i class="fa fa-globe fa-5x"></i>
+                      <h2><span class="counter"> 89 </span><span>%</span></h2>
+                      <p>PHP</p>
+                  </div>
+              </div>
+          </div>
+         </div> 
+      </section> -->
+    <!--====================================================
                             Education
       ======================================================-->       
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
@@ -280,159 +373,95 @@
     </section> 
 
     <!--====================================================
-                        PORTFOLIO
+                        EXPERIENCE
     ======================================================-->      
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio"> 
-          <div class="row my-auto">
-              <div class="col-12">
-                <h2 class="  text-center">Project</h2>
-                <div class="mb-5 heading-border"></div>
-              </div>
-              <div class="col-md-12">
-                <div class="port-head-cont">
-                  <button class="btn btn-general btn-green filter-b" data-filter="all">All</button>
-                  <button class="btn btn-general btn-green filter-b" data-filter="consulting">Autonomous Vehicle</button>
-                  <button class="btn btn-general btn-green filter-b" data-filter="finance">Sensor Fusion</button>
-                  <button class="btn btn-general btn-green filter-b" data-filter="marketing">Graphics Design</button> 
-                </div>
-              </div>
-          </div>
-          <div class="row my-auto">
-              <div class="col-sm-4 portfolio-item filter finance">
-                  <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="img/portfolio/p-4.jpg" alt="">
-                  </a>
-              </div>
-              <div class="col-sm-4 portfolio-item filter marketing">
-                  <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="img/portfolio/p-5.jpg" alt="">
-                  </a>
-              </div>
-              <div class="col-sm-4 portfolio-item filter consulting">
-                  <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="img/portfolio/p-6.jpg" alt="">
-                  </a>
-              </div>              
-              <div class="col-sm-4 portfolio-item filter consulting">
-                  <a class="portfolio-link" href="#portfolioModal7" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="img/portfolio/p-7.jpg" alt="">
-                  </a>
-              </div>
-              <div class="col-sm-4 portfolio-item filter consulting">
-                  <a class="portfolio-link" href="#portfolioModal8" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="img/portfolio/p-8.jpg" alt="">
-                  </a>
-              </div>
-              <div class="col-sm-4 portfolio-item filter finance">
-                  <a class="portfolio-link" href="#portfolioModal9" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="img/portfolio/p-9.jpg" alt="">
-                  </a>
-              </div>              
-              <div class="col-sm-4 portfolio-item filter marketing">
-                  <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="img/portfolio/p-1.jpg" alt="">
-                  </a>
-              </div>
-              <div class="col-sm-4 portfolio-item filter marketing">
-                  <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="img/portfolio/p-2.jpg" alt="">
-                  </a>
-              </div>
-              <div class="col-sm-4 portfolio-item filter finance">
-                  <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-                      <div class="caption-port">
-                          <div class="caption-port-content">
-                              <i class="fa fa-search-plus fa-3x"></i>
-                          </div>
-                      </div>
-                      <img class="img-fluid" src="img/portfolio/p-3.jpg" alt="">
-                  </a>
-              </div> 
-          </div>
-      </section>
-
-    <!--====================================================
-                        SKILLS
-    ======================================================-->       
-      <!-- <section class=" d-flex flex-column" id="skills">
-         <div class="p-lg-5 p-3 skill-cover">
+    <section class="resume-section p-3 p-lg-5 " id="experience">
+      <div class="row my-auto">
           <div class="col-12">
-            <h2 class="text-center" style="color:white;">Skills</h2>
+            <h2 class="  text-center">Experience</h2>
             <div class="mb-5 heading-border"></div>
           </div>
-          <div class="row text-center my-auto "> 
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <i class="fa fa-html5 fa-5x"></i>
-                      <h2><span class="counter"> 84 </span><span>%</span></h2>
-                      <p>HTML5</p>
-                  </div>
+          <div class="resume-item col-md-12 col-sm-12 " > 
+            <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+              <div class=" resume-content mr-auto">
+                  <h4 class="mb-3"><img src="img/3secondz.svg" style="height:40px;"></h4>
+                  <!--<h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i>3SECONDZ Inc.</h4>-->
+                  <h5>3SECONDZ Inc.</h5>
+                  <p><a href="https://3secondz.com">3SECONDZ Inc.</a>, a startup established in 2016, aims to extract intelligence from driving data. They commercialized the world's first AI-based motorsports coach.
+                    Starting with the self-developed driving data logger device "XYRO", they completed <a href="https://3secondz.com/product/teamsolution">a total solution</a> covering data collection, analysis, management and utilization.
+                    They are seeking ways to enter the ADAS, autonomous driving, connected car and mobility markets with their own driving-data ecosystem.
+                    <br /><br />
+                    As a lead of Pilot division, I'm in charge of government-funded projects and prior research for future growth carried out by 3SECONDZ R&D Center.</p>
               </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <i class="fa fa-css3 fa-5x"></i>
-                      <h2><span class="counter"> 95 </span><span>%</span></h2>
-                      <p>CSS3</p>
-                  </div>
+              <div class="resume-date text-md-right">
+                  <span class="text-primary">September 2016 - Present</span>
               </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <i class="fa fa-code fa-5x"></i>
-                      <h2><span class="counter"> 65 </span><span>%</span></h2>
-                      <p>JQuery</p>
-                  </div>
-              </div>
-              <div class="col-md-3 col-sm-6">
-                  <div class="skill-item">
-                      <i class="fa fa-globe fa-5x"></i>
-                      <h2><span class="counter"> 89 </span><span>%</span></h2>
-                      <p>PHP</p>
-                  </div>
-              </div>
+            </div>  
           </div>
-         </div> 
-      </section> -->
 
+          <div class="resume-item col-md-12 col-sm-12 " > 
+            <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+              <div class=" resume-content mr-auto">
+                  <h4 class="mb-3"><img src="img/donga.jfif" style="height:80px;"></h4>
+                  <!--<h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i>3SECONDZ Inc.</h4>-->
+                  <h5>Dong-A Publishing Co., Ltd.</h5>
+                  <p></p>
+              </div>
+              <div class="resume-date text-md-right">
+                  <span class="text-primary">September 2008 - February 2009</span>
+              </div>
+            </div>  
+          </div>
+
+          <div class="resume-item col-md-12 col-sm-12 " > 
+            <div class="card mx-0 p-4 mb-5" style="border-color: #17a2b8; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+              <div class=" resume-content mr-auto">
+                  <h4 class="mb-3"><img src="img/nrc.png" style="height:80px;"></h4>
+                  <!--<h4 class="mb-3"><i class="fa fa-globe mr-3 text-info"></i>3SECONDZ Inc.</h4>-->
+                  <h5>National Research Council for Economics, Humanities and Social Sciences</h5>
+                  <p></p>
+              </div>
+              <div class="resume-date text-md-right">
+                  <span class="text-primary">March 2008 - August 2008</span>
+              </div>
+            </div>  
+          </div>
+          
+          <!-- <div class="resume-item col-md-6 col-sm-12">
+            <div class="card mx-0 p-4 mb-5" style="border-color: #ffc107; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+              <div class="resume-content mr-auto">
+                  <h4 class="mb-3"><i class="fa fa-laptop mr-3 text-warning"></i>  Web Developer</h4>
+                  <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                  <span class="text-primary">December 2018 - March 2019</span>
+              </div>
+            </div>  
+          </div>
+          <div class="resume-item col-md-6 col-sm-12">
+            <div class="card mx-0 p-4 mb-5" style="border-color: #28a745; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+              <div class="resume-content mr-auto">
+                  <h4 class="mb-3"><i class="fa fa-camera mr-3 text-success"></i> Junior Web Designer</h4>
+                  <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                  <span class="text-primary">July 2017 - December 2018</span>
+              </div>
+            </div>  
+          </div>
+          <div class="resume-item col-md-6 col-sm-12">
+            <div class="card mx-0 p-4 mb-5" style="border-color: #2196f3; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
+              <div class="resume-content mr-auto">
+                  <h4 class="mb-3"><i class="fa fa-area-chart mr-3 text-primary"></i> Web Design Intern</h4>
+                  <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.</p>
+              </div>
+              <div class="resume-date text-md-right">
+                  <span class="text-primary">September 2018 - June 2019</span>
+              </div>
+            </div>  
+          </div> -->
+      </div>
+  </section>
 
 
     <!--====================================================
@@ -456,8 +485,11 @@
                 <div class="contact-add contact-box-desc">
                   <h3><i class="fa fa-map-marker cl-atlantis fa-1x"></i> Address</h3>
                   <p>
-                    #204 IT Convergence Building (N1)<br />291 Daehak-ro, Yuseong-gu, Daejeon 34141, Republic of Korea<br /><br />
-                    34141 대전 유성구 대학로 291 한국과학기술원 IT융합빌딩 204호
+                    #204 IT Convergence Building (N1)<br />
+                    291 Daehak-ro, Yuseong-gu, Daejeon 34141, Republic of Korea<br />
+                    <br />
+
+                    34141 대전 유성구 대학로 291 KAIST IT융합빌딩 204호
                   </p>
                 </div>
                 <!-- <div class="contact-phone contact-side-desc contact-box-desc">
@@ -469,7 +501,6 @@
                 <address class="address-details-f"> 
                   yongseop<i class="fa fa-at"></i>kaist.ac.kr<br />
                   ys<i class="fa fa-at"></i>3secondz.com<br />
-                  dearyongseop<i class="fa fa-at"></i>gmail.com
                 </address>
                 <ul class="list-inline social-icon-f top-data">
                   <li><a href="https://www.linkedin.com/in/yongseop-jeong/" ><i class="fa fa-solid fa-linkedin"></i></a></li>
