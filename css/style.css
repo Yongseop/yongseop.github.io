@@ -229,6 +229,7 @@ a:active {
     background-repeat: no-repeat;
 }
 
+
   #about h1 {
     /*font-size: 100%;*/
   }
@@ -459,8 +460,15 @@ a:active {
                       AWARD
 ======================================================*/
  
-#awards {
+/* #award {
     background: #f0f0f0;
+} */
+
+#awards {
+    background-image: url(../img/award.jpg); 
+    background-size: cover;
+    background-position:right top;
+    background-repeat: no-repeat;
 }
 
 #award-box {
