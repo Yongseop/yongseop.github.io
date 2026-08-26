@@ -26,3 +26,11 @@
   });
 
 })(jQuery); // End of use strict
+
+// "Last Updated" from the document's Last-Modified header (replaces document.write)
+(function () {
+  var el = document.getElementById('last-updated');
+  if (el && document.lastModified) {
+    el.textContent = 'Last Updated: ' + document.lastModified.split(' ')[0];
+  }
+})();

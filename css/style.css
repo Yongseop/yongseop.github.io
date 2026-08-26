@@ -83,6 +83,12 @@ a:active {
 /*==================================================
                     NAV-BAR
 ====================================================*/
+  #sideNav .brand-title {
+      color: #fff;
+      font-size: 30px;
+      font-weight: 500;
+  }
+
   #sideNav .navbar-nav .nav-item .nav-link {
       font-weight: 600;
       text-transform: uppercase;
@@ -204,6 +210,19 @@ a:active {
       }
   }
 
+  /* framed card used by Experience / Publication / Media */
+  .resume-card {
+      border-color: #17a2b8;
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);
+  }
+
+  /* small italic sub-line (division, venue) */
+  .resume-note {
+      font-size: 0.8rem;
+      font-weight: 500;
+      font-style: italic;
+  }
+
   .bg-primary {
       background-color: #2196f3 !important;
   }
@@ -215,10 +234,12 @@ a:active {
 /*==================================================
                       ABOUT
 ====================================================*/
+  /* background: 1080p still (2:04) from MBC 뉴스투데이 2026-08-17, https://www.youtube.com/watch?v=MGJc8E20UTY
+     broadcast overlays (logo/time, 뉴스투데이 badge, weather bar) removed by patch cloning */
   #about {
-      background-image: url(../img/profile-banner.jpg); 
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 80%), url(../img/about-banner.jpg);
       background-size: cover;
-      background-position:right;
+      background-position: center;
       background-repeat: no-repeat;
   }
 
@@ -230,6 +251,18 @@ a:active {
 }
 
 
+  /* light text with a soft shadow over the darkened banner */
+  #about h2,
+  #about .subheading,
+  #about h6 {
+      color: #fff;
+      text-shadow: 3px 3px 5px gray;
+  }
+
+  #about h2 {
+      line-height: 1;
+  }
+
   #about h1 {
     /*font-size: 100%;*/
   }
@@ -237,8 +270,13 @@ a:active {
 /*==================================================
                     EXPERIENCE
 ====================================================*/  
+  /* background: "turned off laptop computer on top of brown wooden table" by Alesia Kazantceva,
+     Unsplash License — https://unsplash.com/photos/VWcPlbHglYc */
   #experience {
-    background: #f5f5f5;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)), url(../img/experience.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   #experience .card h4{
@@ -471,13 +509,13 @@ a:active {
     background-repeat: no-repeat;
 }
 
-#award-box {
+.award-box {
     overflow: hidden;
     position: relative;
     padding: 60px 0;
 }
 
-#award-box:before {
+.award-box:before {
     content: "";
     width: 1px;
     height: 100%;
@@ -487,21 +525,21 @@ a:active {
     left: 50%;
 }
 
-#award-box .award {
+.award-box .award {
     width: 50%;
     clear: both;
     position: relative;
 }
 
-#award-box .award:before,
-#award-box .award:after {
+.award-box .award:before,
+.award-box .award:after {
     content: "";
     display: block;
     clear: both;
 }
 
-#award-box .award:first-child:before,
-#award-box .award:last-child:before {
+.award-box .award:first-child:before,
+.award-box .award:last-child:before {
     content: "";
     width: 11px;
     height: 11px;
@@ -515,17 +553,17 @@ a:active {
     transform: rotate(45deg);
 }
 
-#award-box .award:last-child:before {
+.award-box .award:last-child:before {
     top: auto;
     bottom: -54px;
 }
 
-#award-box .award:last-child:nth-child(even):before {
+.award-box .award:last-child:nth-child(even):before {
     right: auto;
     left: -11px;
 }
 
-#award-box .award-icon {
+.award-box .award-icon {
     width: 24px;
     height: 24px;
     background: #fff;
@@ -537,7 +575,7 @@ a:active {
     transform: rotate(45deg);
 }
 
-#award-box .award-icon:before {
+.award-box .award-icon:before {
     content: "";
     display: block;
     width: 15px;
@@ -550,11 +588,11 @@ a:active {
     transition: background-color 0.2s ease 0s;
 }
 
-#award-box .award:hover .award-icon:before {
+.award-box .award:hover .award-icon:before {
     background: #39b3ff;
 }
 
-#award-box .award-content {
+.award-box .award-content {
     width: 85%;
     padding: 18px 30px;
     background: #fff;
@@ -565,11 +603,11 @@ a:active {
     transition: all 0.3s ease 0s;
 }
 
-#award-box .award:hover .award-content {
+.award-box .award:hover .award-content {
     border: 1px solid #cfcdcd;
 }
 
-#award-box .award-content:before {
+.award-box .award-content:before {
     content: "";
     display: block;
     width: 14px;
@@ -583,12 +621,12 @@ a:active {
     transition: all 0.2s ease 0s;
 }
 
-#award-box .award:hover .award-content:before {
+.award-box .award:hover .award-content:before {
     background: #39b3ff;
     border-color: #39b3ff;
 }
 
-#award-box .award-content:after {
+.award-box .award-content:after {
     content: "";
     width: 11%;
     height: 1px;
@@ -598,7 +636,7 @@ a:active {
     right: -14%;
 }
 
-#award-box .date {
+.award-box .date {
     display: block;
     font-size: 15px;
     font-weight: 600;
@@ -607,76 +645,76 @@ a:active {
     transition: all 0.3s ease 0s;
 }
 
-#award-box .award:hover .date {
+.award-box .award:hover .date {
     color: #444;
 }
 
-#award-box .title {
+.award-box .title {
     font-size: 18px;
     color: #444;
     margin-top: 0;
     transition: all 0.3s ease 0s;
 }
 
-#award-box .award:hover .title {
+.award-box .award:hover .title {
     color: #39b3ff;
 }
 
-#award-box .description {
+.award-box .description {
     font-size: 16px;
     color: #777;
     line-height: 28px;
     margin-top: 8px;
 }
 
-#award-box .award:nth-child(2n),
-#award-box .award:nth-child(2n) .award-content {
+.award-box .award:nth-child(2n),
+.award-box .award:nth-child(2n) .award-content {
     float: right;
     text-align: left;
 }
 
-#award-box .award:nth-child(2n) .award-icon {
+.award-box .award:nth-child(2n) .award-icon {
     right: 0;
     left: -12px;
 }
 
-#award-box .award:nth-child(2n) .award-content:before {
+.award-box .award:nth-child(2n) .award-content:before {
     left: -7.3px;
 }
 
-#award-box .award:nth-child(2n) .award-content:after {
+.award-box .award:nth-child(2n) .award-content:after {
     left: -14%;
 }
  
 @media only screen and (max-width: 767px) {
-    #award-box {
+    .award-box {
         padding-left: 20px;
     }
-    #award-box:before {
+    .award-box:before {
         left: 20px;
     }
-    #award-box .award {
+    .award-box .award {
         width: 100%;
     }
-    #award-box .award,
-    #award-box .award-content {
+    .award-box .award,
+    .award-box .award-content {
         float: right;
         padding:5px;
         text-align: left;
     }
-    #award-box .award:first-child:before,
-    #award-box .award:last-child:nth-child(odd):before {
+    .award-box .award:first-child:before,
+    .award-box .award:last-child:nth-child(odd):before {
         right: auto;
         left: -11px;
     }
-    #award-box .award-icon {
+    .award-box .award-icon {
         right: 0;
         left: -12px;
     }
-    #award-box .award-content:before {
+    .award-box .award-content:before {
         left: -7.3px;
     }
-    #award-box .award-content:after {
+    .award-box .award-content:after {
         left: -14%;
     }
 }
@@ -793,4 +831,216 @@ a:active {
     height:100%;
     width:100%;
     position:absolute;
+}
+/*====================================================
+                   PUBLICATION
+======================================================*/
+/* background: "open book lot" by Patrick Tomasso, Unsplash License
+   https://unsplash.com/photos/Oaqk7qqNh_c */
+#publication {
+    background-image: linear-gradient(rgba(255, 255, 255, 0.72), rgba(255, 255, 255, 0.72)), url(../img/publication.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* section height changes when switching tabs; size the background to the
+   viewport instead so it doesn't re-fit (desktop only — fixed attachment is
+   unreliable on mobile browsers) */
+@media (min-width: 992px) {
+    #publication {
+        background-attachment: fixed;
+    }
+}
+
+/* tabs: same weight/case as the side-nav links */
+#publication .pub-tabs .nav-link {
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #495057;
+    padding: 0.3rem 1.5rem;
+    border-radius: 0;
+}
+
+#publication .pub-tabs .nav-link.active {
+    background-color: #2196f3;
+    color: #fff;
+}
+
+/* card: same border/shadow as #experience cards */
+#publication .pub-card {
+    border-color: #17a2b8;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);   /* = .resume-card */
+    width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem 1.5rem;
+}
+
+/* alt-language title: like the <h6> role line in #experience */
+#publication .pub-subtitle {
+    font-weight: 500;
+    color: #555;
+}
+
+/* authors: like the .description.subheading line in #education */
+#publication .pub-authors {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+#publication .pub-authors b {
+    font-weight: 600;
+    color: #343a40;
+}
+
+/* venue: like the small italic <h6> division line in #experience */
+#publication .pub-venue {
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: italic;
+    color: #555;
+}
+
+/* Domestic: Hangul falls back to Noto Sans KR, which sets wider than Saira — trim a step */
+#pub-dom .pub-card h5 {
+    font-size: 1.05rem;
+}
+
+#pub-dom .pub-authors,
+#pub-dom .pub-venue {
+    font-size: 0.95rem;
+}
+
+#publication .pub-card .resume-date {
+    min-width: 0;
+    white-space: nowrap;
+    margin-left: 1rem;
+    line-height: 1.3;
+}
+
+#publication .pub-badge {
+    font-family: 'Saira Extra Condensed', serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+    vertical-align: text-bottom;
+    display: inline-block;
+    width: 6rem;
+    text-align: center;
+}
+
+#publication .pub-badge-journal {
+    background-color: #2196f3;
+}
+
+#publication .pub-badge-conference {
+    background-color: #20c997;
+}
+
+@media only screen and (max-width: 767px) {
+    #publication .pub-card {
+        flex-direction: column;
+    }
+    #publication .pub-card .resume-date {
+        order: -1;
+        margin: 0 0 0.25rem 0;
+        text-align: left;
+    }
+}
+
+/*====================================================
+                   MEDIA
+======================================================*/
+/* background: "Business newspaper article" by AbsolutVision, Unsplash License
+   https://unsplash.com/photos/WYd_PkCa1BY */
+#media {
+    background-image: url(../img/media.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* card: same border/shadow as .resume-card */
+#media .media-card {
+    border-color: #17a2b8;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);
+    overflow: hidden;
+    transition: all 0.3s ease 0s;
+}
+
+#media .portfolio-link {
+    display: block;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+#media .media-card {
+    height: 100%;
+}
+
+#media .portfolio-link:hover .media-card {
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#media .portfolio-item {
+    margin: 0 0 30px;
+}
+
+/* thumbnail with the hover overlay borrowed from #portfolio */
+#media .media-thumb {
+    position: relative;
+}
+
+#media .media-thumb img {
+    width: 100%;
+}
+
+#media .media-thumb .caption-port {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all ease 0.5s;
+    opacity: 0;
+    background: rgba(54, 160, 245, 0.73);
+    z-index: 2;
+}
+
+#media .portfolio-link:hover .caption-port {
+    opacity: 1;
+}
+
+#media .media-thumb .caption-port .caption-port-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    margin-top: -24px;
+    text-align: center;
+    color: white;
+}
+
+/* text: same roles as the publication card lines */
+#media .media-source {
+    font-weight: 500;
+    color: #555;
+}
+
+#media .media-card h5 {
+    font-size: 1.05rem;
+    line-height: 1.3;
+}
+
+#media .media-desc {
+    font-size: 0.95rem;
+    color: #777;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
