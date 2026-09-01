@@ -237,7 +237,7 @@ a:active {
   /* background: 1080p still (2:04) from MBC 뉴스투데이 2026-08-17, https://www.youtube.com/watch?v=MGJc8E20UTY
      broadcast overlays (logo/time, 뉴스투데이 badge, weather bar) removed by patch cloning */
   #about {
-      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.65) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0) 80%), url(../img/about-banner.jpg);
+      background-image: url(../img/about-banner.jpg);
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -251,7 +251,7 @@ a:active {
 }
 
 
-  /* light text with a soft shadow over the darkened banner */
+  /* light text with a soft shadow over the banner */
   #about h2,
   #about .subheading,
   #about h6 {
