@@ -2,7 +2,7 @@
 /*GENERAL STYLE*/
 
 body {
-    font-family: 'Noto Sans KR', serif;
+    font-family: 'Noto Sans KR', sans-serif;
     font-weight:300;
     padding-top: 54px;
     color: #333333;
@@ -25,7 +25,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Saira Extra Condensed', serif;
+    font-family: 'Saira Extra Condensed', 'Noto Sans KR', sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     color: #343a40;
@@ -53,7 +53,7 @@ a:active {
 .subheading {
     /*text-transform: uppercase;*/
     font-weight: 500;
-    font-family: 'Saira Extra Condensed', serif;
+    font-family: 'Saira Extra Condensed', 'Noto Sans KR', sans-serif;
     font-size: 1.35rem;
 }
 
@@ -280,9 +280,16 @@ a:active {
   }
 
   #experience .card h4{
-    font-family: 'Roboto Condensed', sans-serif;
     text-transform: none;
     color:#555;
+  }
+
+  /* body copy: a step below the 1rem default so it sits under the condensed headings */
+  #experience .resume-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #555;
+    margin: 0.5rem 0 0;
   }
 
 /*====================================================
@@ -301,7 +308,6 @@ a:active {
 }
 
 .skill-cover h3{
-  font-family: "hind", sans-serif;
   font-size: 35px;
   margin-bottom: 40px;
 }
@@ -318,7 +324,6 @@ a:active {
 
 .skill-item h2 {
     color: #fff;
-    font-size: "hind", sans-serif;
     font-size: 35px;
     font-weight: 700;
     margin-top: 15px;
@@ -327,8 +332,7 @@ a:active {
 
 .skill-item p {
     color: #fff;
-    font-family: "hind", sans-serif;
-    /*text-transform: uppercase;*/
+      /*text-transform: uppercase;*/
     font-weight: 300;
     margin-top: 0;
 }
@@ -694,7 +698,7 @@ a:active {
 
 /* tabs: same weight/case as the side-nav links */
 #publication .pub-tabs .nav-link {
-    font-family: 'Saira Extra Condensed', serif;
+    font-family: 'Saira Extra Condensed', 'Noto Sans KR', sans-serif;
     font-size: 1.35rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -762,7 +766,7 @@ a:active {
 }
 
 #publication .pub-badge {
-    font-family: 'Saira Extra Condensed', serif;
+    font-family: 'Saira Extra Condensed', 'Noto Sans KR', sans-serif;
     font-size: 0.85rem;
     font-weight: 600;
     text-transform: uppercase;
